@@ -7,13 +7,17 @@
 
     
 
-    <title>Archives: 2018 | </title>
+    <title>starter | </title>
     <meta name="author" content="John Doe">
+    
+    <meta name="description" content="启动.\mongod.exe –dbpath=../data
+导入备份.\mongorestore.exe –drop -d raindrop D:\backup.mongo-20170609\backup.mongo-20170609\raindrop–drop：删除原有数据-d：制定数据库名称
+">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="starter"/>
     <meta property="og:site_name" content="Hexo"/>
 
     
@@ -191,46 +195,69 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
-        <span class="breadcrumb">Current page(Archives)</span>
+        <span class="breadcrumb">Current page(Categories)</span>
+        
+            
+
         
 
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>starter</h1>
+    
 
 
-    <ul class="collapsible mt-0" data-collapsible="accordion">
-        
-        
-            <li>
-                <div class="collapsible-header active">
-                    <i class="fa fa-archive"></i>2018
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/2018/02/01/starter/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2018-02-01T09:53:48.000Z">2018-02-01</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                starter
-                            </a>
-                        
-                            <a href="/2018/02/01/hello-world/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2018-02-01T08:50:07.381Z">2018-02-01</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                Hello World
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
-        
-    </ul>
+            </div>
+            <time class="pink-link-context" datetime="2018-02-01T09:53:48.000Z"><a href="/2018/02/01/starter/">2018-02-01</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#启动"><span class="section table-of-contents-text">启动</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#导入备份"><span class="section table-of-contents-text">导入备份</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p>.\mongod.exe –dbpath=../data</p>
+<h2 id="导入备份"><a href="#导入备份" class="headerlink" title="导入备份"></a>导入备份</h2><p>.\mongorestore.exe –drop -d raindrop D:\backup.mongo-20170609\backup.mongo-20170609\raindrop<br>–drop：删除原有数据<br>-d：制定数据库名称</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">db.talk.aggregate([&#123;$group : &#123;_id : &quot;$satisfaction&quot;, count : &#123;$sum : 1&#125;&#125;&#125;])</span><br><span class="line"></span><br><span class="line">$project：修改输入文档的结构。可以用来重命名、增加或删除域，也可以用于创建计算结果以及嵌套文档。</span><br><span class="line">$match：用于过滤数据，只输出符合条件的文档。$match使用MongoDB的标准查询操作。</span><br><span class="line">$limit：用来限制MongoDB聚合管道返回的文档数。</span><br><span class="line">$skip：在聚合管道中跳过指定数量的文档，并返回余下的文档。</span><br><span class="line">$unwind：将文档中的某一个数组类型字段拆分成多条，每条包含数组中的一个值。</span><br><span class="line">$group：将集合中的文档分组，可用于统计结果。</span><br><span class="line">$sort：将输入文档排序后输出。</span><br><span class="line">$geoNear：输出接近某一地理位置的有序文档。</span><br></pre></td></tr></table></figure>
+
+                
+
+
+<p class="pink-link-context">
+    <a href="/2018/02/01/hello-world/" rel="next" title="Hello World">
+    Next: Hello World
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+
 
 
 </div>
